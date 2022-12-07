@@ -67,6 +67,18 @@ create table ogrenciler6
 	kayit_tarih date,
 	PRIMARY KEY (ogrenci_no)
 );
+create table ogrenci
+(
+    ogrenci_no char(7),
+	isim varchar(20),
+	soyisim varchar(25),
+	not_ort real,
+	kayit_tarih date,
+	CONSTRAINT org1 PRIMARY KEY (ogrenci_no,isim)--conposite pk 
+	                                    --bir tabloda bi tane pk olur bbirden fazlyi bu sekilde yapabilirim
+	CONSTRAINT org2 unique (soyisim,not_ort)
+);
+
 -- FOREIGN KEY 
 
 /*
