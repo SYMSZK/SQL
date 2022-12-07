@@ -28,6 +28,6 @@ insert into ogrenciler (isim,soyisim) values('seyma','suzuk');
 
 --DQL - DATA QUERY LANG
 --SELECT
-select * from ogrenciler;
+select * from ogrenciler;--buradaki * sembolu herseyi anlamindadir
 
 
